@@ -50,7 +50,7 @@ namespace classIntro
 
             Laptop laptop1 = new Laptop();
             laptop1.laptopBrand = "Asus ";
-            laptop1.laptopMemory = "521GB";
+            laptop1.laptopMemory = "512GB";
             laptop1.laptopPrice = 120000;
 
             Laptop laptop2 = new Laptop();
@@ -63,18 +63,31 @@ namespace classIntro
             {
                 Console.WriteLine(laptoplar[i].laptopBrand);
             }
-            Console.WriteLine("DÖNGÜ BİTTİ");
+            Console.WriteLine("stop");
             foreach (var laptop in laptoplar)
             {
                 Console.WriteLine(laptop.laptopPrice);
             }
-            
 
-  
+            Console.WriteLine("******************************");
 
+            Earbuds earbuds1 = new Earbuds();
+            earbuds1.Id = 928;
+            earbuds1.earbudsBrand = "Apple";
+            earbuds1.eardbudsName = "Apple Airpods 2nd";
+            earbuds1.earbudsPrice = 3800;
 
+            Earbuds earbuds2 = new Earbuds();
+            earbuds2.Id = 929;
+            earbuds2.earbudsBrand = "Apple";
+            earbuds2.eardbudsName = "Apple Airpods Pro 1nd";
+            earbuds2.earbudsPrice = 8000;
 
-
+            Earbuds[] earbudsx = new Earbuds[] { earbuds1, earbuds2 };
+            for (int i = 0; i < earbudsx.Length; i++)
+            {
+                Console.WriteLine("Name: " + earbudsx[i].eardbudsName);
+            }
 
             Console.ReadLine();
         }
@@ -97,5 +110,12 @@ namespace classIntro
         public string laptopBrand { get; set; }
         public double laptopPrice { get; set; }
         public string laptopMemory { get; set; }
+    }
+    class Earbuds
+    {
+        public int  Id { get; set; }
+        public string eardbudsName { get; set; }
+        public double earbudsPrice { get; set; }
+        public string earbudsBrand { get; set; }
     }
 }

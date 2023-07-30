@@ -10,11 +10,20 @@ namespace DegerVeReferansTipler
     {
         static void Main(string[] args)
         {
-            int sayi1 = 10;
-            int sayi2 = 30;
-            sayi1 = sayi2;
-            sayi2 = 65;
-            Console.WriteLine(); 
+            string[] sehirler1 = new string[] {"Ankara","İstanbul","İzmir"}; // 102
+            string[] sehirler2 = new string[] { "Adana", "Bursa", "Bolu" }; // 102!
+            sehirler1 = sehirler2;
+            sehirler2[0] = "Mersin";
+            foreach (var item in sehirler1)
+            {
+                Console.WriteLine(item[0]);
+            }
+
+
+
+
+
+            Console.ReadLine( );
         }
     }
 }

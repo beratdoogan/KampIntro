@@ -18,6 +18,9 @@ namespace Matematik
             ıslem.BuyukMuKucukMu(10, 10);
             ıslem.BuyukMuKucukMu(90, 20);
 
+            int krediFaizOrani = ıslem.carp(4, 7);
+
+
 
 
             Console.ReadLine();

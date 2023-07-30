@@ -18,10 +18,9 @@ namespace Matematik
             double sonuc = sayi1 - sayi2;
             Console.WriteLine(sayi1 + " - " + sayi2 + " = " + sonuc);
         }
-        public void carp(double sayi1,double sayi2)
+        public int carp(double sayi1,double sayi2)
         {
-            double sonuc = sayi1 * sayi2;
-            Console.WriteLine(sayi1 + " x " + sayi2 + " = " + sonuc);
+            return sayi1 * sayi2;
         }
         public void Bol(double sayi1, double sayi2)
         {

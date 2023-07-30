@@ -11,15 +11,15 @@ namespace Donguler
     {
         static void Main(string[] args)
         {
-            string[] markalar = new string[] { "Mercedes Benz", "BMW", "Audi","Fiat"};
-            
+            string[] markalar = new string[] { "Mercedes Benz", "BMW", "Audi", "Fiat" };
+
             for (int i = 0; i < markalar.Length; i++)
             {
                 Console.WriteLine(markalar[i]);
             }
             Console.WriteLine("Sayfa sonu");
             string[] kategoriler = new string[] { "A class", "B class", "Van", "coupe" };
-            for (int i = 0; i < kategoriler.Length ; i++)
+            for (int i = 0; i < kategoriler.Length; i++)
             {
                 Console.WriteLine(kategoriler[i]);
             }
@@ -34,7 +34,7 @@ namespace Donguler
             }
 
 
-            string[] laptoplar = new string[] {"asus","apple","lenovo" };
+            string[] laptoplar = new string[] { "asus", "apple", "lenovo" };
             for (int i = 0; i < laptoplar.Length; i++)
             {
                 Console.WriteLine(laptoplar[i]);
@@ -53,3 +53,4 @@ namespace Donguler
         }
     }
 }
+
